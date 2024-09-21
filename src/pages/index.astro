@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<div>
+		<h1 id="greetings">
+			Welcome To Astro Project
+		</h1>
+		<div class="actions">
+			<a href="/login">Login</a>
+			<a href="/register">Register</a>
+			<a href="/catalog">Catalog</a>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	#greetings{
+		color: #fff;
+		position: relative;
+		top: 5vh;
+		text-align: center;
+	}
+	.actions{
+		text-align: center;
+		font-size: 25px;
+		position: relative;
+		top: 10vh;
+		display: flex;
+		justify-content: space-evenly;
+
+	}
+</style>
